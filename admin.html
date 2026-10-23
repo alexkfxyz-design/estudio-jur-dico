@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de administración</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- ============ LOGIN ============ -->
+  <div class="login" id="login">
+    <form class="login-card" id="loginForm">
+      <div class="login-mark">⚖</div>
+      <h1>Panel de administración</h1>
+      <p id="loginSub">Ingresa tus credenciales para gestionar el sitio.</p>
+      <label>Usuario<input name="usuario" autocomplete="username" required autofocus></label>
+      <label>Contraseña<input name="clave" type="password" autocomplete="current-password" required></label>
+      <div class="login-error" id="loginError"></div>
+      <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+      <div class="demo-hint">Demo · usuario: <code>admin</code> · contraseña: <code>admin123</code></div>
+      <a href="index.html" class="back-site">← Volver al sitio</a>
+    </form>
+  </div>
+
+  <!-- ============ APP ============ -->
+  <div class="app" id="app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="side-brand">
+        <span class="side-mark" id="sideMark">CM</span>
+        <div><strong id="sideName"></strong><small>Administración</small></div>
+      </div>
+      <nav class="side-nav" id="sideNav"></nav>
+      <div class="side-foot">
+        <a href="index.html" target="_blank" class="side-link">↗ Ver sitio web</a>
+        <button class="side-link" id="logoutBtn">⎋ Cerrar sesión</button>
+      </div>
+    </aside>
+    <div class="side-overlay" id="sideOverlay"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
+        <div>
+          <h1 id="viewTitle">Panel</h1>
+          <p id="viewDesc"></p>
+        </div>
+        <div class="top-actions" id="topActions"></div>
+      </header>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-box" id="modalBox">
+      <div class="modal-head">
+        <h2 id="modalTitle"></h2>
+        <button class="icon-btn" id="modalClose" aria-label="Cerrar">×</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

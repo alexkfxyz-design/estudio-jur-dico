@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudio Jurídico</title>
+  <meta name="description" content="Abogado en Arequipa: derecho civil, familia, laboral, penal y empresarial. Agenda tu consulta en línea.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark" id="brandMark">CM</span>
+        <span class="brand-text"><strong id="brandName"></strong><small id="brandSub"></small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre mí</a>
+        <a href="#areas">Áreas</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#testimonios" data-sec="secTestimonios">Testimonios</a>
+        <a href="#blog" data-sec="secBlog">Blog</a>
+        <a href="#faq" data-sec="secFaq">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#citas" class="btn btn-gold btn-sm" data-sec="secCitas">Agendar cita</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" id="heroEyebrow"></span>
+        <h1 id="heroTitle"></h1>
+        <p class="lead" id="heroText"></p>
+        <div class="hero-ctas">
+          <a href="#citas" class="btn btn-gold" data-sec="secCitas">Agendar consulta</a>
+          <a href="#" class="btn btn-ghost-light" id="heroWa" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="frame" id="heroPhoto"></div>
+        <div class="hero-badge" id="heroBadge"></div>
+      </div>
+    </div>
+    <div class="container stats" id="stats"></div>
+  </section>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-img reveal">
+        <div class="sobre-frame" id="sobreImg"></div>
+        <div class="sobre-card">
+          <span>Colegiatura</span>
+          <strong id="sobreCol"></strong>
+        </div>
+      </div>
+      <div class="sobre-text reveal">
+        <span class="eyebrow">Sobre mí</span>
+        <h2 id="sobreNombre"></h2>
+        <div class="sobre-bio" id="sobreBio"></div>
+        <blockquote class="mision" id="sobreMision"></blockquote>
+        <ul class="enfoque" id="sobreEnfoque"></ul>
+        <p class="idiomas"><strong>Idiomas:</strong> <span id="sobreIdiomas"></span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÁREAS ============ -->
+  <section id="areas" class="sec-alt">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Áreas de práctica</span>
+        <h2>¿En qué puedo ayudarte?</h2>
+        <p>Asesoría y patrocinio en las principales ramas del derecho, con una estrategia diseñada para cada caso.</p>
+      </div>
+      <div class="areas-grid" id="areasGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ PORTAFOLIO ============ -->
+  <section id="portafolio">
+    <div class="container">
+      <div class="sec-head-row reveal">
+        <div class="sec-head">
+          <span class="eyebrow">Portafolio profesional</span>
+          <h2>Trayectoria y resultados</h2>
+          <p>Casos representativos, experiencia, formación académica y certificaciones.</p>
+        </div>
+        <a href="#" class="btn btn-outline" id="cvBtn" download>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+          Descargar CV
+        </a>
+      </div>
+
+      <div class="tabs reveal" role="tablist">
+        <button class="tab active" data-tab="casos">Casos de éxito</button>
+        <button class="tab" data-tab="experiencia">Experiencia</button>
+        <button class="tab" data-tab="formacion">Formación</button>
+        <button class="tab" data-tab="certificaciones">Certificaciones</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-casos">
+        <div class="chips" id="casoFiltros"></div>
+        <div class="casos-grid" id="casosGrid"></div>
+        <p class="nota-reserva">* Los nombres de los clientes se mantienen en reserva por secreto profesional.</p>
+      </div>
+      <div class="tab-panel" id="tab-experiencia"><ol class="timeline" id="timeline"></ol></div>
+      <div class="tab-panel" id="tab-formacion"><div class="formacion-grid" id="formacionGrid"></div></div>
+      <div class="tab-panel" id="tab-certificaciones"><div class="cert-grid" id="certGrid"></div></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section id="testimonios" class="sec-dark" data-sec="secTestimonios">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Testimonios</span>
+        <h2>Lo que dicen mis clientes</h2>
+      </div>
+      <div class="testi-wrap reveal">
+        <button class="testi-nav prev" id="testiPrev" aria-label="Anterior">‹</button>
+        <div class="testi-viewport"><div class="testi-track" id="testiTrack"></div></div>
+        <button class="testi-nav next" id="testiNext" aria-label="Siguiente">›</button>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ BLOG ============ -->
+  <section id="blog" data-sec="secBlog">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Blog jurídico</span>
+        <h2>Información legal en lenguaje claro</h2>
+        <p>Artículos breves para que conozcas tus derechos.</p>
+      </div>
+      <div class="chips center" id="blogFiltros"></div>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="sec-alt" data-sec="secFaq">
+    <div class="container faq-grid">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Resolvemos tus dudas</h2>
+        <p>Si no encuentras tu respuesta, escríbeme y te responderé personalmente.</p>
+        <a href="#contacto" class="btn btn-primary" style="margin-top:24px">Hacer una pregunta</a>
+      </div>
+      <div class="faq-list reveal" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ============ CITAS ============ -->
+  <section id="citas" data-sec="secCitas">
+    <div class="container">
+      <div class="cita-box reveal">
+        <div class="cita-info">
+          <span class="eyebrow">Agenda en línea</span>
+          <h2>Reserva tu consulta</h2>
+          <p>Elige el día y la hora que mejor te acomode. La primera evaluación del caso es gratuita.</p>
+          <ol class="pasos">
+            <li><span>1</span><div><strong>Elige fecha y hora</strong><small>Solo verás horarios disponibles.</small></div></li>
+            <li><span>2</span><div><strong>Cuéntame tu caso</strong><small>Unas líneas bastan para prepararme.</small></div></li>
+            <li><span>3</span><div><strong>Recibe la confirmación</strong><small>Te contacto por teléfono o WhatsApp.</small></div></li>
+          </ol>
+          <p class="cita-horario" id="citaHorario"></p>
+        </div>
+        <form class="cita-form" id="citaForm" autocomplete="on">
+          <div class="grid-2">
+            <label>Nombre completo*<input name="nombre" required placeholder="Tu nombre"></label>
+            <label>Teléfono / WhatsApp*<input name="telefono" required type="tel" placeholder="9XX XXX XXX" pattern="[0-9+\s]{9,15}"></label>
+          </div>
+          <label>Correo electrónico<input name="email" type="email" placeholder="tucorreo@ejemplo.com"></label>
+          <div class="grid-2">
+            <label>Área legal*<select name="area" id="citaArea" required></select></label>
+            <fieldset class="modalidad">
+              <legend>Modalidad*</legend>
+              <label class="radio"><input type="radio" name="modalidad" value="Presencial" checked><span>Presencial</span></label>
+              <label class="radio"><input type="radio" name="modalidad" value="Virtual"><span>Virtual</span></label>
+            </fieldset>
+          </div>
+          <div class="grid-2">
+            <label>Fecha*<input name="fecha" id="citaFecha" type="date" required></label>
+            <label>Hora*<select name="hora" id="citaHora" required disabled><option value="">Primero elige una fecha</option></select></label>
+          </div>
+          <label>Breve descripción del caso<textarea name="mensaje" rows="3" placeholder="Cuéntame brevemente tu situación"></textarea></label>
+          <button class="btn btn-gold btn-block" type="submit">Solicitar cita</button>
+          <small class="form-note">Tus datos son confidenciales y solo se usarán para contactarte.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section id="contacto" class="sec-alt">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2>Conversemos sobre tu caso</h2>
+      </div>
+      <div class="contacto-grid">
+        <div class="contacto-info reveal" id="contactoInfo"></div>
+        <form class="contacto-form reveal" id="contactoForm">
+          <div class="grid-2">
+            <label>Nombre*<input name="nombre" required></label>
+            <label>Correo*<input name="email" type="email" required></label>
+          </div>
+          <div class="grid-2">
+            <label>Teléfono<input name="telefono" type="tel"></label>
+            <label>Asunto*<input name="asunto" required></label>
+          </div>
+          <label>Mensaje*<textarea name="mensaje" rows="5" required></textarea></label>
+          <label class="check"><input type="checkbox" required> Acepto que mis datos sean usados para responder mi consulta.</label>
+          <button class="btn btn-primary btn-block" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+      <div class="mapa reveal" id="mapa"></div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand"><span class="brand-mark" id="footMark"></span><span class="brand-text"><strong id="footName"></strong><small id="footSub"></small></span></div>
+        <p class="foot-slogan" id="footSlogan"></p>
+        <div class="social" id="social"></div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul class="foot-links">
+          <li><a href="#sobre">Sobre mí</a></li>
+          <li><a href="#areas">Áreas de práctica</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li data-sec="secBlog"><a href="#blog">Blog</a></li>
+          <li data-sec="secCitas"><a href="#citas">Agendar cita</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Áreas</h4>
+        <ul class="foot-links" id="footAreas"></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul class="foot-links" id="footContacto"></ul>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <span>© <span id="year"></span> <span id="footCopy"></span>. Todos los derechos reservados.</span>
+      <a href="admin.html" class="admin-link">🔒 Acceso administrador</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.5A11.8 11.8 0 0 0 20.4 3.6z"/></svg>
+  </a>
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+  <!-- Modal y toast -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
